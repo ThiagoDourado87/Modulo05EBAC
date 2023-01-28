@@ -1,14 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: justify;
 }
 
 /*cabeçalho*/
 header{
-    padding: 10px 0;
-    background-color: #182c61;
+    padding: px 0;
+    background-color: #1e3880;
     color: #ecf0f1;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 header img{
@@ -27,6 +32,7 @@ header nav li {
 header nav li a{
     color: #ecf0f1;  
     text-decoration: none;
+    font-size: larger;
 }
 
 /*CONTAINER*/
@@ -37,7 +43,7 @@ header nav li a{
 }
 
 .container{
-    width 1366px;
+    width: 1366px;
     margin:0 auto;
 }
 
@@ -62,7 +68,7 @@ section .container{
 .articles{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:right;
 }
 
 .articles article img{
@@ -90,6 +96,32 @@ align-items: center;
 padding: 15px;
 margin: 10px;
 }
+
+#SobreaSérie article{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+#jogos .articles a,
+#personagens article a{ 
+    text-decoration: none;
+    justify-content: space-between;  
+    text-align: center;
+    font-size:large;
+    color: #01050f;
+    cursor: pointer;
+}
+
+#jogos .articles a,
+#personagens article a:hover{ 
+    text-decoration: none;
+    text-align: center;
+    font-size:larger;
+    color: #0b2d83;
+    cursor: pointer;
+}
+
 
 #personagens img,
 #jogos img{
@@ -126,7 +158,7 @@ form input,
 form textarea,
 form button{
     display: block;
-    width: 300px;
+    width: 600px;
     margin-bottom: 8px;
     padding: 8px
 }
@@ -175,5 +207,26 @@ footer{
 
 ul{
     list-style-type: none;
+}
+
+h1{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #182c61;
+    color:#ecf0f1;
+    border:#314e9e;
+    padding-left: 10px;
+}
+
+h2{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #304d9c;
+    color:#ecf0f1;
+    border:#84a1f3;
+    text-align: center;
+}
+
+section{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
